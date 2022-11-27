@@ -46,11 +46,11 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
           platforms: linux/arm64/v8,linux/amd64 
-          context: .
-          file: .Dockerfile
+          context: ./
+          file: ./Dockerfile
           push: true
           tags: |
-            patryk/lab7
+            patryk/lab4:testLab7
       
       #Przenies cache'a
       - name: Move cache
