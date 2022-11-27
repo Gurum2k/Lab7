@@ -50,7 +50,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            patryk/lab7:test1 
+            patryk/lab7
       
       #Przenies cache'a
       - name: Move cache
